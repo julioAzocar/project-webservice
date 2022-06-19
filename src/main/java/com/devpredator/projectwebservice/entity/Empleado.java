@@ -1,15 +1,23 @@
 package com.devpredator.projectwebservice.entity;
 
+import java.time.LocalDateTime;
+
 public class Empleado {
 
 	private long id;
 	private String Nombre;
 	private String Apellidos;
 	private long Edad;
-	
+	private LocalDateTime fechaCreacion;
 	
 	//
 	
+	public LocalDateTime getFechaCreacion() {
+		return fechaCreacion;
+	}
+	public void setFechaCreacion(LocalDateTime fechaCreacion) {
+		this.fechaCreacion = fechaCreacion;
+	}
 	public String getNombre() {
 		return Nombre;
 	}

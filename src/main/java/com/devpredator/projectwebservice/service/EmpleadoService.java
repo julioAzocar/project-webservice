@@ -1,5 +1,6 @@
 package com.devpredator.projectwebservice.service;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,6 +23,7 @@ public class EmpleadoService {
 		empleado.setNombre("julio");
 		empleado.setApellidos("azocar");
 		empleado.setEdad(42);
+		empleado.setFechaCreacion(LocalDateTime.now());
 		
 		return empleado;
 	}
@@ -34,12 +36,14 @@ public class EmpleadoService {
 		empleado.setNombre("julio");
 		empleado.setApellidos("azocar");
 		empleado.setEdad(42);
+		empleado.setFechaCreacion(LocalDateTime.now());
 		
 		Empleado empleado2 = new Empleado();
 		empleado2.setId(1);
 		empleado2.setNombre("julio2");
 		empleado2.setApellidos("azocar2");
 		empleado2.setEdad(42);
+		empleado2.setFechaCreacion(LocalDateTime.now());
 		
 		empleados.add(empleado);
 		empleados.add(empleado2);
